@@ -206,9 +206,9 @@ input[type=submit]:active {
 
 
 header{
-    background-image: -o-linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(img/hero.jpg);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 0%, 0.7)), to(hsla(0, 0%, 0%, 0.7))), url(img/hero.jpg);
-    background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(img/hero.jpg);
+    background-image: -o-linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(img/hero-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 0%, 0.7)), to(hsla(0, 0%, 0%, 0.7))), url(img/hero-min.jpg);
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -269,6 +269,21 @@ header{
 .main-nav li a:active {
     
     border-bottom: 1px solid #e67e22;
+}
+
+
+/* --- mobile nav ----*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
 }
 
 /* ------- STICKY NAV ------- */ 
@@ -407,17 +422,26 @@ header{
 .city-features {
     margin-bottom: 5px;
 }
+.js--wp-3 .box {
+    transition: padding 0.2s;
+    -webkit-transition: padding 0.2s;
+    -moz-transition: padding 0.2s;
+    -ms-transition: padding 0.2s;
+    -o-transition: padding 0.2s;
+}
 
-
+.js--wp-3 .box:hover {
+    padding: 0%;
+}
 
 /* ----------------------------------------------------------------------------------*/
 /* TESTIMONIALS */ 
 /* ----------------------------------------------------------------------------------*/
 
 .section-testimonials {
-    background-image: -o-linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(img/back-customers.jpg);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 0%, 0.7)), to(hsla(0, 0%, 0%, 0.7))), url(img/back-customers.jpg);
-    background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(img/back-customers.jpg);
+    background-image: -o-linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(img/back-customers-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 0%, 0.7)), to(hsla(0, 0%, 0%, 0.7))), url(img/back-customers-min.jpg);
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(img/back-customers-min.jpg);
     background-size: cover;
     background-position: center;
     color: whitesmoke;
